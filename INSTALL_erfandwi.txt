@@ -9,5 +9,25 @@ Buat API dengan beberapa kriteria seperti,
 4. Mengubah data buku
 5. Menghapus buku
 
-## Installing Node.js
+OS yang digunakan:
+* Ubuntu 20.04 LTS
+
+Detail Spesifikasi:
+* 2 GiB Memory
+* 1 vCPU
+* 60 GiB SSD
+
+Instance terpasang IP Private 172.26.14.19 dan IP Public 52.221.231.128
+
+Instalasi:
+
+Installing Node.js
 ```sh
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+```
+
+Installing Build Tools
+```sh
+sudo apt-get install -y build-essential
+```
