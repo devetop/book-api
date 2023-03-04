@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@hapi/hapi": "^21.3.0"
+  },
+  "name": "submission",
+  "description": "",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
