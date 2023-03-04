@@ -1,0 +1,13 @@
+# Submission Bookshelf API
+
+Deskripsi:
+Menyiapkan 1 Instance menggunakan AWS Lightsail. Install NodeJS v18 lalu install Hapi.js.
+Buat API dengan beberapa kriteria seperti,
+1. Untuk menyimpan buku
+2. Menampilkan seluruh buku
+3. Menampilkan detail buku
+4. Mengubah data buku
+5. Menghapus buku
+
+## Installing Node.js
+```sh
