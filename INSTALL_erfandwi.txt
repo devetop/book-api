@@ -1,7 +1,7 @@
 # Submission Bookshelf API
 
 Deskripsi:
-Menyiapkan 1 Instance menggunakan AWS Lightsail. Install NodeJS v18 lalu install Hapi.js.
+Menyiapkan 1 Instance menggunakan AWS Lightsail. Install NodeJS v18 lalu install hapi.
 Buat API dengan beberapa kriteria seperti,
 1. Untuk menyimpan buku
 2. Menampilkan seluruh buku
@@ -30,4 +30,54 @@ sudo apt-get install -y nodejs
 Installing Build Tools
 ```sh
 sudo apt-get install -y build-essential
+```
+
+Install hapi dengan npm
+```sh
+npm install @hapi/hapi
+```
+
+Buat file server.js di folder src
+```sh
+mkdir src
+nano src/server.js
+```
+Lalu edit file server.js
+```plaintext
+const Hapi = require('@hapi/hapi');
+ 
+const init = async () => {
+    const server = Hapi.server({
+        port: 5000,
+        host: 'localhost',
+    });
+ 
+    await server.start();
+    console.log(`Server berjalan pada ${server.info.uri}`);
+}
+ 
+init()
+```
+
+Edit file package.json menjadi seperti berikut
+```plaintext
+{
+  "dependencies": {
+    "@hapi/hapi": "^21.3.0"
+  },
+  "name": "submission",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
+Test web server
+```sh
+npm run start
 ```
